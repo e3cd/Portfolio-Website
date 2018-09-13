@@ -1,0 +1,3 @@
+Create package.json manifest for project by running npm init.
+"node-sass -w scss/ -o src/css/ --recursive"  ==  watch scss folder, compiles and outputs to css, recursive prevents auto-reload 
+All things installed with npm is stored in dependencies, and put into node_modules folder

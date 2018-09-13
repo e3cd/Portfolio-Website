@@ -1,0 +1,22 @@
+{
+  "name": "portfolio-website",
+  "version": "1.0.0",
+  "description": "responsive portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o src/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/e3cd/Portfolio-Website.git"
+  },
+  "author": "Allan Gao",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/e3cd/Portfolio-Website/issues"
+  },
+  "homepage": "https://github.com/e3cd/Portfolio-Website#readme",
+  "dependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
