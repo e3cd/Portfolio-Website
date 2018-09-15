@@ -1,0 +1,43 @@
+// Google Fonts
+@import url("https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed|Pavanam");
+
+//Font Variables
+$primary-font: "Encode Sans Semi Condensed", sans-serif;
+$secondary-font: "Pavanam", sans-serif;
+
+//Variables
+$primary-color: #444;
+$secondary-color: #e9ec1c;
+$show-home-image: true;
+$home-image: url(../images/test.jpg);
+$background-opacity: 0.6;
+
+//mixin variables for same transition
+@mixin easeOut {
+  transition: all 1s ease-out;
+}
+
+@mixin background {
+  @if $show-home-image {
+    &#background-image {
+      background: $home-image;
+      background-attachment: fixed;
+      background-size: cover;
+
+      &:after {
+        //psuedoelement
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: rgba(
+          $primary-color,
+          $background-opacity
+        ); //rgba for opacity
+      }
+    }
+  }
+}
