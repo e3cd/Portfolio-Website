@@ -1,4 +1,4 @@
-//Menu Button
+//Sass For Menu Button And Menu Overlay
 
 .menu-btn {
   position: absolute;
@@ -14,9 +14,14 @@
     margin: 0 0 5px 0; //only at bottom
     background: white;
     @include easeOut;
+    // //does not hover all elements
+    // &:hover {
+    //   background: $secondary-color;
+    //   @include easeOut();
+    // }
   }
 
-  // Rotate Into X With Menu lines
+  // Menu lines rotate into X
   &.close {
     transform: rotate(90deg);
 

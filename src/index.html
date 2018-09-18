@@ -20,7 +20,7 @@
         </div>
 
         <nav class="menu">
-            <div class="menu-branding">
+            <div class="menu-photo">
                 <div class="portrait">
 
                 </div>
@@ -48,9 +48,9 @@
         </nav>
     </header>
 
-    <main id="home">
+    <main id="homepage">
         <h1 class="primary-heading">
-            Allan <span class="text-secondary">Gao</span>
+            Allan <span class="yellow-text">Gao</span>
         </h1>
         <h2 class="secondary-heading">
             Student | Aspiring Web Developer
@@ -63,12 +63,22 @@
                 <i class="fab fa-linkedin fa-2x"></i>
             </a>
             <a href="#">
-                <i class="far fa-envelope-square fa-2x"></i>
+                <i class="far fa-envelope fa-2x"></i>
+            </a>
+            <a href="#">
+                <i class="fab fa-medium fa-2x"></i>
             </a>
         </div>
     </main>
 
+    <!-- Import main.js containing menu overlay dropdown -->
+
     <script src="js/main.js"></script>
+
+    <!-- Script to get btn-line menu to hover to secondary color-- scss only hovers siblings after the hovered element -->
+
+    <script type="text/javascript"> var elms = document.getElementsByClassName("btn-line"); var n = elms.length; function changeColor(color) { for (var i = 0; i < n; i++) { elms[i].style.backgroundColor = color; } } for (var i = 0; i < n; i++) { elms[i].onmouseover = function () { changeColor("rgb(218, 218, 0)"); }; elms[i].onmouseout = function () { changeColor("white"); }; } </script>
+
 </body>
 
 </html>

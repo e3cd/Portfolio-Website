@@ -1,17 +1,17 @@
-@import url("https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed|Pavanam");
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|");
 .menu-btn {
   position: absolute;
   z-index: 3;
   right: 35px;
   top: 35px;
   cursor: pointer;
-  transition: all 0.5s ease-in-out; }
+  transition: all 0.4s ease-in-out; }
   .menu-btn .btn-line {
     width: 28px;
     height: 3px;
     margin: 0 0 5px 0;
     background: white;
-    transition: all 0.5s ease-in-out; }
+    transition: all 0.4s ease-in-out; }
   .menu-btn.close {
     transform: rotate(90deg); }
     .menu-btn.close .btn-line:nth-child(1) {
@@ -50,7 +50,7 @@ body {
       width: 100%;
       height: 100%;
       z-index: -1;
-      background: rgba(68, 68, 68, 0.6); }
+      background: rgba(68, 68, 68, 0.55); }
 
 h1,
 h2,
@@ -60,12 +60,15 @@ h3 {
   h1.primary-heading,
   h2.primary-heading,
   h3.primary-heading {
-    font-size: 6rem; }
+    font-size: 6rem;
+    padding-bottom: 0.5rem;
+    font-family: "Montserrat", sans-serif; }
   h1.secondary-heading,
   h2.secondary-heading,
   h3.secondary-heading {
     margin-bottom: 2rem;
-    padding: 0.2rem 1 rem; }
+    padding-bottom: 6rem;
+    font-family: "Open Sans", sans-serif; }
 
 a {
   color: white;
@@ -76,22 +79,20 @@ header {
   z-index: 2;
   width: 100%; }
 
-.text-secondary {
-  color: #e9ec1c; }
-
 main {
   text-align: center;
   padding: 4rem;
   height: 100%; }
-  main .icons {
-    margin: 4rem;
-    padding: 8rem; }
-    main .icons a {
-      padding: 0.4rem; }
-      main .icons a:hover {
-        color: #e9ec1c;
-        transition: all 0.5s ease-in-out; }
-  main#home {
+  main#homepage {
     overflow: hidden; }
-    main#home h1 {
+    main#homepage h1 {
       margin-top: 20vh; }
+  main .yellow-text {
+    color: #dada00; }
+  main .icons {
+    margin-top: 1rem; }
+    main .icons a {
+      padding: 2rem; }
+      main .icons a:hover {
+        color: #dada00;
+        transition: all 0.4s ease-in-out; }

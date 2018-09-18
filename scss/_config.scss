@@ -1,42 +1,47 @@
+//---Config containing mixins and variables
+
 // Google Fonts
-@import url("https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Condensed|Pavanam");
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|");
 
 //Font Variables
-$primary-font: "Encode Sans Semi Condensed", sans-serif;
-$secondary-font: "Pavanam", sans-serif;
+$primary-font: "Montserrat", sans-serif;
+$secondary-font: "Open Sans", sans-serif;
 
 //Variables
 $primary-color: #444;
-$secondary-color: #e9ec1c;
-$show-home-image: true;
+$secondary-color: rgb(218, 218, 0);
+$display-home-image: true;
 $home-image: url(../images/test.jpg);
-$background-opacity: 0.6;
+$opacity: 0.55;
 
-//mixin variables for same transition
+//Mixins
+
+//Mixin for ease out transition
 @mixin easeOut {
-  transition: all 0.5s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
+//Mixin for setting background image opacity
 @mixin background {
-  @if $show-home-image {
+  @if $display-home-image {
     &#background-image {
       background: $home-image;
       background-attachment: fixed;
-      background-size: cover;
+      background-size: cover; // full image
 
       &:after {
-        //psuedoelement
-        content: "";
+        //pseudoelement
+        content: ""; //no content
         position: absolute;
         top: 0;
         right: 0;
         width: 100%;
         height: 100%;
-        z-index: -1;
+        z-index: -1; //behind text
         background: rgba(
           $primary-color,
-          $background-opacity
-        ); //rgba for opacity
+          $opacity
+        ); //wrap grey background in rgba to set opacity
       }
     }
   }
