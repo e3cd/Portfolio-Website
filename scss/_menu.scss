@@ -3,15 +3,15 @@
 .menu-btn {
   position: absolute;
   z-index: 3;
-  right: 35px;
-  top: 35px;
+  right: 80px;
+  top: 40px;
   cursor: pointer;
   @include easeOut;
 
   .btn-line {
-    width: 28px;
-    height: 3px;
-    margin: 0 0 5px 0; //only at bottom
+    width: 35px;
+    height: 4px;
+    margin: 0 0 8px 0; //only at bottom
     background: white;
     @include easeOut;
     // //does not hover all elements
