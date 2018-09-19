@@ -8,6 +8,18 @@ img {
   border-radius: 20px;
 }
 
+.nav-item {
+  padding-bottom: 40px;
+  padding-bottom: 40px;
+  font-size: 24px;
+  font-family: $secondary-font;
+
+  a:hover {
+    color: $secondary-color;
+    @include easeOut;
+  }
+}
+
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -100,5 +112,3 @@ img {
     }
   }
 }
-
-//delay nav items effect
