@@ -2,20 +2,20 @@
 .menu-btn {
   position: absolute;
   z-index: 3;
-  right: 35px;
-  top: 35px;
+  right: 80px;
+  top: 40px;
   cursor: pointer;
   transition: all 0.4s ease-in-out; }
   .menu-btn .btn-line {
-    width: 28px;
-    height: 3px;
-    margin: 0 0 5px 0;
+    width: 35px;
+    height: 4px;
+    margin: 0 0 8px 0;
     background: white;
     transition: all 0.4s ease-in-out; }
   .menu-btn.close {
     transform: rotate(90deg); }
     .menu-btn.close .btn-line:nth-child(1) {
-      transform: rotate(45deg) translate(5px, 5px); }
+      transform: rotate(48.7deg) translate(11px, 8px); }
     .menu-btn.close .btn-line:nth-child(2) {
       opacity: 0; }
     .menu-btn.close .btn-line:nth-child(3) {
