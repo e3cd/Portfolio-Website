@@ -4,6 +4,7 @@ const menuBtn = document.querySelector(".menu-btn");
 const menu = document.querySelector(".menu");
 const menuNav = document.querySelector(".menu-nav");
 const menuBranding = document.querySelector(".menu-photo");
+//querySelectorAll puts queries into a node list- similar to array
 const navItems = document.querySelectorAll(".nav-items");
 
 //Set Initial State Of Menu
