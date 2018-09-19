@@ -22,11 +22,11 @@
         <nav class="menu">
             <div class="menu-photo">
                 <div class="portrait">
-
+                    <img src="images/test1.jpg" height="200" width="200">
                 </div>
             </div>
             <ul class="menu-nav">
-                <li class="nav-item">
+                <li class="nav-item current">
                     <a href="/" class="nav-link">
                         Home
                     </a>
@@ -41,7 +41,7 @@
                     </a>
                 <li class="nav-item">
                     <a href="/contact.html" class="nav-link">
-                        Contact
+                        Contact Me
                     </a>
                 </li>
             </ul>
@@ -75,10 +75,25 @@
 
     <script src="js/main.js"></script>
 
-    <!-- Script to get btn-line menu to hover to secondary color-- scss only hovers siblings after the hovered element -->
+    <!-- Script to get all menu btn-lines to hover to secondary color-- scss only hovers siblings after the hovered element -->
 
-    <script type="text/javascript"> var elms = document.getElementsByClassName("btn-line"); var n = elms.length; function changeColor(color) { for (var i = 0; i < n; i++) { elms[i].style.backgroundColor = color; } } for (var i = 0; i < n; i++) { elms[i].onmouseover = function () { changeColor("rgb(218, 218, 0)"); }; elms[i].onmouseout = function () { changeColor("white"); }; } </script>
-
+    <script type="text/javascript">
+        var elms = document.getElementsByClassName("btn-line");
+        var n = elms.length;
+        function changeColor(color) {
+            for (var i = 0; i < n; i++) {
+                elms[i].style.backgroundColor = color;
+            }
+        }
+        for (var i = 0; i < n; i++) {
+            elms[i].onmouseover = function () {
+                changeColor("rgb(218, 218, 0)");
+            };
+            elms[i].onmouseout = function () {
+                changeColor("white");
+            };
+        } 
+    </script>
 </body>
 
 </html>

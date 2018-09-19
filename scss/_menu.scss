@@ -1,5 +1,34 @@
 //Sass For Menu Button And Menu Overlay
 
+//Portrait image
+
+img {
+  padding: 1px;
+  border: 3px solid $secondary-color;
+  border-radius: 20px;
+}
+
+.nav-item {
+  padding: 20px 0px;
+  font-size: 30px;
+  font-family: $secondary-font;
+  text-transform: uppercase;
+
+  a:hover {
+    color: $secondary-color;
+    @include easeOut;
+  }
+
+  &.current > a {
+    color: $secondary-color;
+  }
+}
+
+.nav-link {
+  display: inline-block;
+  position: relative;
+}
+
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -14,6 +43,7 @@
     margin: 0 0 8px 0; //only at bottom
     background: white;
     @include easeOut;
+
     // //does not hover all elements
     // &:hover {
     //   background: $secondary-color;
@@ -28,7 +58,7 @@
     .btn-line {
       // Line 1 - Rotate
       &:nth-child(1) {
-        transform: rotate(48.7deg) translate(11px, 8px);
+        transform: rotate(48.5deg) translate(10.5px, 9px);
       }
       // Line 2 - Hide
       &:nth-child(2) {
@@ -42,14 +72,52 @@
   }
 }
 
-//Menu Overlay
-// .menu {
-//   position: fixed;
-//   top: 0;
-//   width: 100%;
-//   visibility: hidden;
+// Menu Overlay
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  visibility: hidden;
+  opacity: 0.9;
 
-//   &.show {
-//     visibility: visible;
-//   }
-// }
+  &.show {
+    visibility: visible;
+  }
+
+  &-photo,
+  &-nav {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    width: 50%; //photo and menu overlay take up half the screen in width
+    height: 100vh; //takes up entire screen
+    overflow: hidden; //no scroll bar on overlay
+  }
+
+  // nav slide from right
+  &-nav {
+    margin: 0;
+    padding: 0;
+    background: darken($primary-color, 5);
+    list-style: none;
+    transform: translate3d(100%, 0, 0);
+    @include easeOut;
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  //Photo Slide from left
+  &-photo {
+    background: $primary-color;
+    transform: translate3d(-100%, 0, 0);
+    @include easeOut;
+
+    &.show {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}
