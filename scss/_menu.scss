@@ -100,7 +100,7 @@ img {
   &-nav {
     margin: 0;
     padding: 0;
-    background: darken($primary-color, 12);
+    background: darken($primary-color, 18);
     list-style: none;
     transform: translate3d(100%, 0, 0);
     @include easeOut;

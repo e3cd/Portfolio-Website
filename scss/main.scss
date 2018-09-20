@@ -80,37 +80,6 @@ main {
 //responsive design import partials
 
 @include mediaSmall {
-  main {
-    align-items: center;
-    text-align: center;
-
-    .primary-heading {
-      text-align: center;
-      font-size: 450%;
-    }
-
-    .secondary-heading {
-      font-size: 125%;
-    }
-
-    .yellow-text {
-      flex-wrap: column-wrap;
-    }
-
-    &#homepage {
-      h1 {
-        margin-top: 20vh;
-      }
-
-      .icons {
-        bottom: 4%;
-        font-size: 80%;
-      }
-    }
-  }
-}
-
-@include mediaMedium {
   body {
     overflow: hidden;
 
@@ -122,38 +91,110 @@ main {
         flex-wrap: column-wrap;
         line-height: 1;
         margin: 1rem;
+        font-size: 250%;
+
+        .yellow-text {
+          flex-wrap: column-wrap;
+          line-height: 0;
+          margin: 1rem;
+        }
       }
 
-      .yellow-text {
-        flex-wrap: column-wrap;
+      .secondary-heading {
+        font-size: 100%;
       }
 
       .icons {
         display: flex;
         justify-content: center;
+        font-size: 60%;
+        position: relative;
+        bottom: 25%;
+      }
+
+      ul.menu-nav,
+      div.menu-photo {
+        float: none;
+        width: 100%;
+        min-height: 0;
+
+        &.show {
+          transform: translate3d(0, 0, 0);
+        }
+      }
+
+      .menu-nav {
+        height: 70vh;
+        transform: translate3d(100%, 0, 0);
+      }
+
+      .menu-photo {
+        height: 30vh;
+        transform: translate3d(-100%, 0, 0);
       }
     }
 
-    ul.menu-nav,
-    div.menu-photo {
-      float: none;
-      width: 100%;
-      min-height: 0;
+    .nav-item {
+      padding: 20px 0px;
+      font-size: 17px;
+    }
 
-      &.show {
-        transform: translate3d(0, 0, 0);
+    .portrait {
+      position: absolute;
+      text-align: center;
+
+      #img {
+        width: 27%;
+        height: 20%;
       }
     }
+  }
 
-    .menu-nav {
-      height: 70vh;
-      transform: translate3d(100%, 0, 0);
-      font-size: 24px;
-    }
+  @include mediaMedium {
+    body {
+      overflow: hidden;
 
-    .menu-photo {
-      height: 30vh;
-      transform: translate3d(-100%, 0, 0);
+      main {
+        align-items: center;
+        text-align: center;
+
+        .primary-heading {
+          flex-wrap: column-wrap;
+          line-height: 1;
+          margin: 1rem;
+        }
+
+        .yellow-text {
+          flex-wrap: column-wrap;
+        }
+
+        .icons {
+          display: flex;
+          justify-content: center;
+        }
+      }
+
+      ul.menu-nav,
+      div.menu-photo {
+        float: none;
+        width: 100%;
+        min-height: 0;
+
+        &.show {
+          transform: translate3d(0, 0, 0);
+        }
+      }
+
+      .menu-nav {
+        height: 70vh;
+        transform: translate3d(100%, 0, 0);
+        font-size: 24px;
+      }
+
+      .menu-photo {
+        height: 30vh;
+        transform: translate3d(-100%, 0, 0);
+      }
     }
   }
 }

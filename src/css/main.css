@@ -61,7 +61,7 @@ img {
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #252525;
+    background: #161616;
     list-style: none;
     transform: translate3d(100%, 0, 0);
     transition: all 0.4s ease-in-out; }
@@ -142,24 +142,54 @@ main {
         color: #dada00;
         transition: all 0.4s ease-in-out; }
 
-@media screen and (max-width: 575px) {
-  main {
-    align-items: center;
-    text-align: center; }
-    main .primary-heading {
-      text-align: center;
-      font-size: 450%; }
-    main .secondary-heading {
-      font-size: 125%; }
-    main .yellow-text {
-      flex-wrap: column-wrap; }
-    main#homepage h1 {
-      margin-top: 20vh; }
-    main#homepage .icons {
-      bottom: 4%;
-      font-size: 80%; } }
+@media screen and (max-width: 480px) {
+  body {
+    overflow: hidden; }
+    body main {
+      align-items: center;
+      text-align: center; }
+      body main .primary-heading {
+        flex-wrap: column-wrap;
+        line-height: 1;
+        margin: 1rem;
+        font-size: 250%; }
+        body main .primary-heading .yellow-text {
+          flex-wrap: column-wrap;
+          line-height: 0;
+          margin: 1rem; }
+      body main .secondary-heading {
+        font-size: 100%; }
+      body main .icons {
+        display: flex;
+        justify-content: center;
+        font-size: 60%;
+        position: relative;
+        bottom: 25%; }
+      body main ul.menu-nav,
+      body main div.menu-photo {
+        float: none;
+        width: 100%;
+        min-height: 0; }
+        body main ul.menu-nav.show,
+        body main div.menu-photo.show {
+          transform: translate3d(0, 0, 0); }
+      body main .menu-nav {
+        height: 70vh;
+        transform: translate3d(100%, 0, 0); }
+      body main .menu-photo {
+        height: 30vh;
+        transform: translate3d(-100%, 0, 0); }
+    body .nav-item {
+      padding: 20px 0px;
+      font-size: 17px; }
+    body .portrait {
+      position: absolute;
+      text-align: center; }
+      body .portrait #img {
+        width: 27%;
+        height: 20%; } }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) and (max-width: 768px) {
   body {
     overflow: hidden; }
     body main {

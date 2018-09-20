@@ -49,8 +49,14 @@ $opacity: 0.55;
 
 //Media query mixin
 
+@mixin mediaXsmall {
+  @media screen and (max-width: 340px) {
+    @content;
+  }
+}
+
 @mixin mediaSmall {
-  @media screen and (max-width: 575px) {
+  @media screen and (max-width: 480px) {
     @content;
   }
 }
@@ -62,7 +68,7 @@ $opacity: 0.55;
 }
 
 @mixin mediaLarge {
-  @media screen and (min-width: 769px) {
+  @media screen and (max-width: 769px) {
     @content;
   }
 }
