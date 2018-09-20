@@ -54,7 +54,7 @@ $opacity: 0.55;
 }
 
 @mixin mediaS-M {
-  @media screen and (min-width: 481px) and (max-width: 600px) {
+  @media screen and (min-width: 481px) and (maxwidth-: 600px) {
     @content;
   }
 }

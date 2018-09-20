@@ -71,6 +71,12 @@
     }
   }
 
+  @include mediaS-M {
+    body {
+      overflow: hidden;
+    }
+  }
+
   @include mediaMedium {
     body {
       overflow: hidden;
