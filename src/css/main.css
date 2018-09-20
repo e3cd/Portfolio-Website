@@ -5,13 +5,19 @@ img {
   border-radius: 20px; }
 
 .nav-item {
-  padding-bottom: 40px;
-  padding-bottom: 40px;
-  font-size: 24px;
-  font-family: "Oxygen", sans-serif; }
+  padding: 20px 0px;
+  font-size: 30px;
+  font-family: "Oxygen", sans-serif;
+  text-transform: uppercase; }
   .nav-item a:hover {
     color: #dada00;
     transition: all 0.4s ease-in-out; }
+  .nav-item.current > a {
+    color: #dada00; }
+
+.nav-link {
+  display: inline-block;
+  position: relative; }
 
 .menu-btn {
   position: absolute;
