@@ -14,7 +14,7 @@ $display-home-image: true;
 $home-image: url(../images/test.jpg);
 $opacity: 0.55;
 
-//Mixins
+////Mixins
 
 //Mixin for ease out transition
 @mixin easeOut {
@@ -44,5 +44,36 @@ $opacity: 0.55;
         ); //wrap grey background in rgba to set opacity
       }
     }
+  }
+}
+
+//Media query mixin
+
+@mixin mediaSmall {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}
+
+@mixin mediaS-M {
+  @media screen and (min-width: 481px) and (max-width: 600px) {
+    @content;
+  }
+}
+@mixin mediaMedium {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mediaLarge {
+  @media screen and (max-width: 769px) and (max-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin mediaXlarge {
+  @media screen and (min-width: 1171px) {
+    @content;
   }
 }

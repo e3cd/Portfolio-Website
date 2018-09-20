@@ -2,12 +2,6 @@
 
 //Portrait image
 
-img {
-  padding: 1px;
-  border: 3px solid $secondary-color;
-  border-radius: 20px;
-}
-
 .nav-item {
   padding: 20px 0px;
   font-size: 30px;
@@ -32,7 +26,7 @@ img {
 .menu-btn {
   position: absolute;
   z-index: 3;
-  right: 80px;
+  right: 8%;
   top: 40px;
   cursor: pointer;
   @include easeOut;
@@ -100,7 +94,7 @@ img {
   &-nav {
     margin: 0;
     padding: 0;
-    background: darken($primary-color, 5);
+    background: darken($primary-color, 18);
     list-style: none;
     transform: translate3d(100%, 0, 0);
     @include easeOut;
@@ -118,6 +112,14 @@ img {
 
     &.show {
       transform: translate3d(0, 0, 0);
+    }
+
+    .portrait {
+      width: 200px;
+      height: 200px;
+      background: url(../images/test1.jpg);
+      border: solid 3px $secondary-color;
+      border-radius: 30%;
     }
   }
 }
