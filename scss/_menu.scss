@@ -2,12 +2,6 @@
 
 //Portrait image
 
-img {
-  padding: 1px;
-  border: 3px solid $secondary-color;
-  border-radius: 20px;
-}
-
 .nav-item {
   padding: 20px 0px;
   font-size: 30px;
@@ -118,6 +112,14 @@ img {
 
     &.show {
       transform: translate3d(0, 0, 0);
+    }
+
+    .portrait {
+      width: 200px;
+      height: 200px;
+      background: url(../images/test1.jpg);
+      border: solid 3px $secondary-color;
+      border-radius: 30%;
     }
   }
 }

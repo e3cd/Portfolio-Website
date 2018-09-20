@@ -49,18 +49,17 @@ $opacity: 0.55;
 
 //Media query mixin
 
-@mixin mediaXsmall {
-  @media screen and (max-width: 340px) {
-    @content;
-  }
-}
-
 @mixin mediaSmall {
   @media screen and (max-width: 480px) {
     @content;
   }
 }
 
+@mixin mediaS-M {
+  @media screen and (min-width: 481px) and (max-width: 600px) {
+    @content;
+  }
+}
 @mixin mediaMedium {
   @media screen and (max-width: 768px) {
     @content;
@@ -68,7 +67,13 @@ $opacity: 0.55;
 }
 
 @mixin mediaLarge {
-  @media screen and (max-width: 769px) {
+  @media screen and (max-width: 769px) and (max-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin mediaXlarge {
+  @media screen and (min-width: 1171px) {
     @content;
   }
 }

@@ -1,0 +1,127 @@
+//responsive design import partials
+
+@include mediaSmall {
+  body {
+    overflow: hidden;
+
+    .nav-link {
+      font-size: 75%;
+    }
+
+    .portrait {
+      position: absolute;
+      text-align: center;
+      width: 40%;
+      height: 40%;
+    }
+
+    .nav-item {
+      padding: 20px 0px;
+    }
+
+    main {
+      align-items: center;
+      text-align: center;
+
+      .primary-heading {
+        flex-wrap: column-wrap;
+        line-height: 1;
+        margin: 1rem;
+        font-size: 350%;
+
+        .yellow-text {
+          flex-wrap: column-wrap;
+          line-height: 0;
+          margin: 1rem;
+        }
+      }
+
+      .secondary-heading {
+        font-size: 100%;
+      }
+
+      .icons {
+        display: flex;
+        justify-content: center;
+        font-size: 80%;
+        position: relative;
+        bottom: 25%;
+      }
+
+      ul.menu-nav,
+      div.menu-photo {
+        float: none;
+        width: 100%;
+        min-height: 0;
+
+        &.show {
+          transform: translate3d(0, 0, 0);
+        }
+      }
+
+      .menu-nav {
+        height: 70vh;
+        transform: translate3d(100%, 0, 0);
+      }
+
+      .menu-photo {
+        height: 30vh;
+        transform: translate3d(-100%, 0, 0);
+      }
+    }
+  }
+
+  @include mediaS-M {
+    body {
+      overflow: hidden;
+    }
+  }
+
+  @include mediaMedium {
+    body {
+      overflow: hidden;
+
+      main {
+        align-items: center;
+        text-align: center;
+
+        .primary-heading {
+          flex-wrap: column-wrap;
+          line-height: 1;
+          margin: 1rem;
+        }
+
+        .yellow-text {
+          flex-wrap: column-wrap;
+        }
+
+        .icons {
+          display: flex;
+          justify-content: center;
+        }
+      }
+
+      ul.menu-nav,
+      div.menu-photo {
+        float: none;
+        width: 100%;
+        min-height: 0;
+
+        &.show {
+          transform: translate3d(0, 0, 0);
+        }
+      }
+
+      .menu-nav {
+        height: 70vh;
+        transform: translate3d(100%, 0, 0);
+        font-size: 24px;
+      }
+
+      .menu-photo {
+        height: 30vh;
+        transform: translate3d(-100%, 0, 0);
+      }
+    }
+  }
+}
