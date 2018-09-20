@@ -76,3 +76,84 @@ main {
     }
   }
 }
+
+//responsive design import partials
+
+@include mediaSmall {
+  main {
+    align-items: center;
+    text-align: center;
+
+    .primary-heading {
+      text-align: center;
+      font-size: 450%;
+    }
+
+    .secondary-heading {
+      font-size: 125%;
+    }
+
+    .yellow-text {
+      flex-wrap: column-wrap;
+    }
+
+    &#homepage {
+      h1 {
+        margin-top: 20vh;
+      }
+
+      .icons {
+        bottom: 4%;
+        font-size: 80%;
+      }
+    }
+  }
+}
+
+@include mediaMedium {
+  body {
+    overflow: hidden;
+
+    main {
+      align-items: center;
+      text-align: center;
+
+      .primary-heading {
+        flex-wrap: column-wrap;
+        line-height: 1;
+        margin: 1rem;
+      }
+
+      .yellow-text {
+        flex-wrap: column-wrap;
+      }
+
+      .icons {
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    ul.menu-nav,
+    div.menu-photo {
+      float: none;
+      width: 100%;
+      min-height: 0;
+
+      &.show {
+        transform: translate3d(0, 0, 0);
+      }
+    }
+
+    .menu-nav {
+      height: 70vh;
+      transform: translate3d(100%, 0, 0);
+      font-size: 24px;
+    }
+
+    .menu-photo {
+      height: 30vh;
+      transform: translate3d(-100%, 0, 0);
+    }
+  }
+}

@@ -22,7 +22,7 @@ img {
 .menu-btn {
   position: absolute;
   z-index: 3;
-  right: 80px;
+  right: 8%;
   top: 40px;
   cursor: pointer;
   transition: all 0.4s ease-in-out; }
@@ -61,7 +61,7 @@ img {
   .menu-nav {
     margin: 0;
     padding: 0;
-    background: #373737;
+    background: #252525;
     list-style: none;
     transform: translate3d(100%, 0, 0);
     transition: all 0.4s ease-in-out; }
@@ -141,3 +141,51 @@ main {
       main .icons a:hover {
         color: #dada00;
         transition: all 0.4s ease-in-out; }
+
+@media screen and (max-width: 575px) {
+  main {
+    align-items: center;
+    text-align: center; }
+    main .primary-heading {
+      text-align: center;
+      font-size: 450%; }
+    main .secondary-heading {
+      font-size: 125%; }
+    main .yellow-text {
+      flex-wrap: column-wrap; }
+    main#homepage h1 {
+      margin-top: 20vh; }
+    main#homepage .icons {
+      bottom: 4%;
+      font-size: 80%; } }
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow: hidden; }
+    body main {
+      align-items: center;
+      text-align: center; }
+      body main .primary-heading {
+        flex-wrap: column-wrap;
+        line-height: 1;
+        margin: 1rem; }
+      body main .yellow-text {
+        flex-wrap: column-wrap; }
+      body main .icons {
+        display: flex;
+        justify-content: center; }
+    body ul.menu-nav,
+    body div.menu-photo {
+      float: none;
+      width: 100%;
+      min-height: 0; }
+      body ul.menu-nav.show,
+      body div.menu-photo.show {
+        transform: translate3d(0, 0, 0); }
+    body .menu-nav {
+      height: 70vh;
+      transform: translate3d(100%, 0, 0);
+      font-size: 24px; }
+    body .menu-photo {
+      height: 30vh;
+      transform: translate3d(-100%, 0, 0); } }
