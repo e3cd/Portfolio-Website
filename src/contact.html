@@ -1,0 +1,98 @@
+//about.html
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Contact me</title>
+</head>
+
+<body>
+    <header>
+        <div class="menu-btn">
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+            <div class="btn-line"></div>
+        </div>
+
+        <nav class="menu">
+            <div class="menu-photo">
+                <div class="portrait">
+                </div>
+            </div>
+            <ul class="menu-nav">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a href="about.html" class="nav-link">
+                        About me
+                    </a>
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link">
+                        My Projects
+                    </a>
+                <li class="nav-item current">
+                    <a href="contact.html" class="nav-link">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contact">
+        <h1 class="primary-heading">
+            Contact<span class="yellow-text">Me</span>
+        </h1>
+        <div class="boxes">
+            <div>
+                <span class="yellow-text">Email:</span>
+            </div>
+            <div>
+                <span class="yellow-text">Email:</span>
+            </div>
+            <div>
+                <span class="yellow-text">Email:</span>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer">
+        copyright
+    </footer>
+
+    <!-- Import main.js containing menu overlay dropdown -->
+
+    <script src="js/main.js"></script>
+
+    <!-- Script to get all menu btn-lines to hover to secondary color-- scss only hovers siblings after the hovered element -->
+
+    <script type="text/javascript">
+        var elms = document.getElementsByClassName("btn-line");
+        var n = elms.length;
+        function changeColor(color) {
+            for (var i = 0; i < n; i++) {
+                elms[i].style.backgroundColor = color;
+            }
+        }
+        for (var i = 0; i < n; i++) {
+            elms[i].onmouseover = function () {
+                changeColor("rgb(218, 218, 0)");
+            };
+            elms[i].onmouseout = function () {
+                changeColor("white");
+            };
+        } 
+    </script>
+</body>
+
+</html>
