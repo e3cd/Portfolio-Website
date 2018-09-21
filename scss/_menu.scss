@@ -106,7 +106,7 @@
 
   //Photo Slide from left
   &-photo {
-    background: $primary-color;
+    background: darken($primary-color, 14);
     transform: translate3d(-100%, 0, 0);
     @include easeOut;
 
@@ -115,11 +115,12 @@
     }
 
     .portrait {
-      width: 200px;
+      width: 185px;
       height: 200px;
-      background: url(../images/test1.jpg);
+      background: url(../images/image.jpg);
       border: solid 3px $secondary-color;
       border-radius: 30%;
+      z-index: 3;
     }
   }
 }
