@@ -62,11 +62,12 @@ $pages-opacity: 0.8;
       &:after {
         //pseudoelement
         content: ""; //no content
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
         width: 100%;
         height: 100%;
+        bottom: 0;
         z-index: -1; //behind text
         background-size: cover;
         background: rgba(
