@@ -68,6 +68,17 @@
         height: 30vh;
         transform: translate3d(-100%, 0, 0);
       }
+
+      .about-info {
+        grid-template-areas:
+          "bio-image"
+          "bio"
+          "job1"
+          "job2"
+          "job3";
+
+        grid-template-columns: 1fr;
+      }
     }
   }
 
