@@ -11,6 +11,7 @@ body {
   @include background;
   @include pages-image;
   background-color: $primary-color;
+  background-size: cover;
   color: white;
   height: 100%;
   margin: 0;
@@ -185,7 +186,8 @@ main {
   padding: 1rem;
   background: darken($primary-color, 18);
   height: 60px;
-  position: sticky; //// may add min-height: calc(100vh-60px); in main.scss
+  position: sticky;
+  // min-height: calc(100vh-60px);
 }
 
 @import "responsive";

@@ -24,16 +24,21 @@
       text-align: center;
 
       .primary-heading {
+        display: flex;
         flex-wrap: column-wrap;
         line-height: 1;
         margin: 1rem;
         font-size: 350%;
+      }
+      .yellow-text {
+        display: flex;
+        flex-wrap: column-wrap;
+        line-height: 0;
+        margin: 1rem;
+      }
 
-        .yellow-text {
-          flex-wrap: column-wrap;
-          line-height: 0;
-          margin: 1rem;
-        }
+      span {
+        align-items: center;
       }
 
       .secondary-heading {
