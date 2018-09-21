@@ -97,6 +97,19 @@ body {
       height: 100%;
       z-index: -1;
       background: rgba(68, 68, 68, 0.55); }
+  body#pages-image {
+    background: url(../images/code-background.jpg);
+    background-attachment: fixed;
+    background-size: cover; }
+    body#pages-image:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: rgba(68, 68, 68, 0.9); }
 
 h1,
 h2,
@@ -178,6 +191,22 @@ main {
       opacity: 0.5;
       border-color: #dada00;
       transition: all 0.4s ease-in-out; }
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem; }
+  .boxes div {
+    font-size: 2rem;
+    border: 3px #fff solid;
+    padding: 1.5rem 2.5rem;
+    margin-bottom: 3rem;
+    transition: all 0.4s ease-in-out; }
+    .boxes div:hover {
+      padding: 0.5rem 1.5rem;
+      border-color: #dada00; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
