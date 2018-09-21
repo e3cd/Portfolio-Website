@@ -79,6 +79,10 @@
 
         grid-template-columns: 1fr;
       }
+
+      .projects {
+        grid-template-columns: 1fr;
+      }
     }
   }
 
@@ -126,6 +130,10 @@
       .menu-photo {
         height: 30vh;
         transform: translate3d(-100%, 0, 0);
+      }
+
+      .projects {
+        grid-template-columns: repeat(3, 1fr);
       }
     }
   }
