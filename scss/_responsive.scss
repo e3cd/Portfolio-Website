@@ -24,16 +24,21 @@
       text-align: center;
 
       .primary-heading {
+        display: flex;
         flex-wrap: column-wrap;
         line-height: 1;
         margin: 1rem;
         font-size: 350%;
+      }
+      .yellow-text {
+        display: flex;
+        flex-wrap: column-wrap;
+        line-height: 0;
+        margin: 1rem;
+      }
 
-        .yellow-text {
-          flex-wrap: column-wrap;
-          line-height: 0;
-          margin: 1rem;
-        }
+      span {
+        align-items: center;
       }
 
       .secondary-heading {
@@ -67,6 +72,21 @@
       .menu-photo {
         height: 30vh;
         transform: translate3d(-100%, 0, 0);
+      }
+
+      .about-info {
+        grid-template-areas:
+          "bio-image"
+          "bio"
+          "job1"
+          "job2"
+          "job3";
+
+        grid-template-columns: 1fr;
+      }
+
+      .projects {
+        grid-template-columns: 1fr;
       }
     }
   }
@@ -121,6 +141,10 @@
       .menu-photo {
         height: 30vh;
         transform: translate3d(-100%, 0, 0);
+      }
+
+      .projects {
+        grid-template-columns: repeat(3, 1fr);
       }
     }
   }

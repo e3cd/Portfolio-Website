@@ -12,7 +12,10 @@ $primary-color: #444;
 $secondary-color: rgb(218, 218, 0);
 $display-home-image: true;
 $home-image: url(../images/test.jpg);
+$display-pages-image: true;
+$pages-image: url(../images/code-background.jpg);
 $opacity: 0.55;
+$pages-opacity: 0.8;
 
 ////Mixins
 
@@ -21,7 +24,7 @@ $opacity: 0.55;
   transition: all 0.4s ease-in-out;
 }
 
-//Mixin for setting background image opacity
+//Mixin for setting background and image opacity
 @mixin background {
   @if $display-home-image {
     &#background-image {
@@ -41,6 +44,34 @@ $opacity: 0.55;
         background: rgba(
           $primary-color,
           $opacity
+        ); //wrap grey background in rgba to set opacity
+        background-size: cover;
+      }
+    }
+  }
+}
+
+//Mixin for setting other pages background and opacity
+@mixin pages-image {
+  @if $display-pages-image {
+    &#pages-image {
+      background: $pages-image;
+      background-attachment: fixed;
+      background-size: cover; // full image
+
+      &:after {
+        //pseudoelement
+        content: ""; //no content
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; //behind text
+        background-size: cover;
+        background: rgba(
+          $primary-color,
+          $pages-opacity
         ); //wrap grey background in rgba to set opacity
       }
     }
