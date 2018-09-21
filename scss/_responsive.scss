@@ -77,6 +77,13 @@
 
       .projects {
         grid-template-columns: 1fr;
+        padding-bottom: 2rem;
+
+        .btn {
+          display: block;
+          padding: 0.2rem 0.1rem;
+          margin-bottom: 0.3rem;
+        }
       }
     }
   }
@@ -129,10 +136,12 @@
         height: 30vh;
         transform: translate3d(-100%, 0, 0);
       }
-
-      .projects {
-        grid-template-columns: 1fr;
-      }
     }
+  }
+}
+
+@include mediaLarge {
+  .projects {
+    grid-template-columns: 1fr;
   }
 }

@@ -132,7 +132,8 @@ h3 {
   h2.secondary-heading,
   h3.secondary-heading {
     margin-bottom: 2rem;
-    padding-bottom: 6rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     font-family: "Oxygen", sans-serif; }
 
 a {
@@ -147,7 +148,7 @@ header {
 main {
   text-align: center;
   padding: 4rem;
-  height: 100%;
+  min-height: calc(100vh - 40px);
   padding-bottom: 0; }
   main#homepage {
     overflow: hidden; }
@@ -230,10 +231,9 @@ main {
 #footer {
   text-align: center;
   background: #161616;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%; }
+  padding: 0.5rem;
+  height: 40px;
+  color: set-text-color(#444); }
 
 @media screen and (max-width: 480px) {
   body h1 {
@@ -282,7 +282,12 @@ main {
       grid-template-areas: "bio-image" "bio" "job1" "job2" "job3";
       grid-template-columns: 1fr; }
     body main .projects {
-      grid-template-columns: 1fr; } }
+      grid-template-columns: 1fr;
+      padding-bottom: 2rem; }
+      body main .projects .btn, body main .projects .btn-dark, body main .projects .btn-light {
+        display: block;
+        padding: 0.2rem 0.1rem;
+        margin-bottom: 0.3rem; } }
 
 @media screen and (max-width: 480px) and (max-width: 768px) {
   body .portrait {
@@ -314,6 +319,8 @@ main {
     font-size: 24px; }
   body .menu-photo {
     height: 30vh;
-    transform: translate3d(-100%, 0, 0); }
-  body .projects {
+    transform: translate3d(-100%, 0, 0); } }
+
+@media screen and (max-width: 769px) and (max-width: 1170px) {
+  .projects {
     grid-template-columns: 1fr; } }

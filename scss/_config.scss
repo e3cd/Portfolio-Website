@@ -85,11 +85,6 @@ $pages-opacity: 0.9;
   }
 }
 
-@mixin mediaS-M {
-  @media screen and (min-width: 481px) and (maxwidth-: 600px) {
-    @content;
-  }
-}
 @mixin mediaMedium {
   @media screen and (max-width: 768px) {
     @content;
