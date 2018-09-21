@@ -2,15 +2,11 @@
 
 @include mediaSmall {
   body {
+    h1 {
+      justify-content: center;
+    }
     .nav-link {
       font-size: 75%;
-    }
-
-    .portrait {
-      position: absolute;
-      text-align: center;
-      width: 40%;
-      height: 40%;
     }
 
     .nav-item {
@@ -26,17 +22,13 @@
         flex-wrap: column-wrap;
         line-height: 1;
         margin: 1rem;
-        font-size: 350%;
+        font-size: 290%;
       }
       .yellow-text {
         display: flex;
         flex-wrap: column-wrap;
         line-height: 0;
         margin: 1rem;
-      }
-
-      span {
-        align-items: center;
       }
 
       .secondary-heading {
@@ -89,15 +81,12 @@
     }
   }
 
-  @include mediaS-M {
-    body {
-      overflow: hidden;
-    }
-  }
-
   @include mediaMedium {
     body {
-      overflow: hidden;
+      .portrait {
+        position: relative;
+        text-align: center;
+      }
 
       main {
         align-items: center;
@@ -145,5 +134,11 @@
         grid-template-columns: repeat(3, 1fr);
       }
     }
+  }
+}
+
+@include mediaLarge {
+  #footer {
+    min-height: calc(100vh-600px);
   }
 }
