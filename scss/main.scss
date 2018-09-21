@@ -79,16 +79,16 @@ main {
 
 .about-info {
   display: grid;
-  grid-gap: 30px; //spacing
   padding-top: 20px;
   grid-template-areas:
     "bio-image bio bio"
     "job1 job2 job3";
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
 
   .bio-image {
     grid-area: bio-image;
     margin: auto;
+    align-items: center;
     border-radius: 30%;
     border: $secondary-color 3px solid;
   }
@@ -125,12 +125,6 @@ main {
   img {
     width: 100%;
     border: 3px #fff solid;
-
-    &:hover {
-      opacity: 0.5;
-      border-color: $secondary-color;
-      @include easeOut;
-    }
   }
 }
 
@@ -162,16 +156,17 @@ main {
   padding: 0.5rem 1rem;
   border: 0;
   margin-bottom: 0.3rem;
-  &:hover {
-    background: $secondary-color;
-    color: set-text-color($secondary-color);
-  }
 }
 
 .btn-dark {
   @extend .btn;
   background: darken($primary-color, 50);
   color: #fff;
+
+  &:hover {
+    background: $secondary-color;
+    color: set-text-color($secondary-color);
+  }
 }
 
 .btn-light {
