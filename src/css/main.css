@@ -310,11 +310,8 @@ main {
       body main div.menu-photo.show {
         transform: translate3d(0, 0, 0); }
     body main .menu-nav {
-      height: 70vh;
+      height: 100vh;
       transform: translate3d(100%, 0, 0); }
-    body main .menu-photo {
-      height: 30vh;
-      transform: translate3d(-100%, 0, 0); }
     body main .about-info {
       grid-template-areas: "bio-image" "bio" "job1" "job2" "job3";
       grid-template-columns: 1fr; }
@@ -481,11 +478,8 @@ ul {
       body main div.menu-photo.show {
         transform: translate3d(0, 0, 0); }
     body main .menu-nav {
-      height: 70vh;
+      height: 100vh;
       transform: translate3d(100%, 0, 0); }
-    body main .menu-photo {
-      height: 30vh;
-      transform: translate3d(-100%, 0, 0); }
     body main .about-info {
       grid-template-areas: "bio-image" "bio" "job1" "job2" "job3";
       grid-template-columns: 1fr; }
