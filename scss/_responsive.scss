@@ -75,6 +75,19 @@
         grid-template-columns: 1fr;
       }
 
+      .title-underline {
+        width: 75px;
+        height: 3px;
+        background-color: white;
+        margin: 10px auto 30px auto;
+      }
+
+      .content-underline {
+        width: 175px;
+        height: 2px;
+        background-color: $secondary-color;
+        margin: 0 auto 20px auto;
+      }
       .projects {
         grid-template-columns: 1fr;
         padding-bottom: 2rem;

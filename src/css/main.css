@@ -74,7 +74,7 @@
       background: url(../images/image.jpg);
       border: solid 3px #dada00;
       border-radius: 30%;
-      z-index: 3; }
+      z-index: 99; }
 
 * {
   box-sizing: border-box; }
@@ -136,6 +136,10 @@ h3 {
     padding-bottom: 3rem;
     font-family: "Oxygen", sans-serif; }
 
+h3 {
+  color: #dada00;
+  font-size: 180%; }
+
 a {
   color: white;
   text-decoration: none; }
@@ -165,27 +169,45 @@ main {
 .about-info {
   display: grid;
   padding-top: 20px;
-  grid-template-areas: "bio-image bio bio" "job1 job2 job3";
+  padding-bottom: 20px;
+  grid-template-areas: "bio-image" "bio" "education" "skills";
   grid-template-columns: 1fr; }
   .about-info .bio-image {
     grid-area: bio-image;
     margin: auto;
     align-items: center;
     border-radius: 30%;
-    border: #dada00 3px solid; }
+    border-color: #dada00; }
   .about-info .bio {
     grid-area: bio;
-    font-size: 1.5rem; }
-  .about-info .job-1 {
-    grid-area: job1; }
-  .about-info .job-2 {
-    grid-area: job2; }
-  .about-info .job-3 {
-    grid-area: job3; }
-  .about-info .job {
-    background: #515151;
-    padding: 0.5rem;
-    border-bottom: #dada00 5px solid; }
+    font-size: 1.5rem;
+    padding-bottom: 20px; }
+
+.title-underline {
+  width: 100px;
+  height: 3px;
+  background-color: white;
+  margin: 10px auto 30px auto; }
+
+.content-underline {
+  width: 300px;
+  height: 2px;
+  background-color: #dada00;
+  margin: 0 auto 20px auto; }
+
+.education {
+  grid-area: education;
+  padding-bottom: 20px; }
+
+.skills {
+  grid-area: skills;
+  padding-bottom: 20px; }
+  .skills .skills-icons {
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1; }
 
 .projects {
   display: grid;
@@ -210,6 +232,14 @@ main {
     .boxes div:hover {
       padding: 0.5rem 3.5rem;
       border-color: #dada00; }
+
+.skills-icons i {
+  font-size: 65px;
+  padding: 20px;
+  margin: 0 auto 50px auto; }
+  .skills-icons i:hover {
+    color: #dada00;
+    transition: all 0.4s ease-in-out; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
@@ -281,6 +311,16 @@ main {
     body main .about-info {
       grid-template-areas: "bio-image" "bio" "job1" "job2" "job3";
       grid-template-columns: 1fr; }
+    body main .title-underline {
+      width: 75px;
+      height: 3px;
+      background-color: white;
+      margin: 10px auto 30px auto; }
+    body main .content-underline {
+      width: 175px;
+      height: 2px;
+      background-color: #dada00;
+      margin: 0 auto 20px auto; }
     body main .projects {
       grid-template-columns: 1fr;
       padding-bottom: 2rem; }

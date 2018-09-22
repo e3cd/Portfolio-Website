@@ -40,6 +40,11 @@ h3 {
   }
 }
 
+h3 {
+  color: $secondary-color;
+  font-size: 180%;
+}
+
 a {
   color: white;
   text-decoration: none; //removes underlines
@@ -81,9 +86,12 @@ main {
 .about-info {
   display: grid;
   padding-top: 20px;
+  padding-bottom: 20px;
   grid-template-areas:
-    "bio-image bio bio"
-    "job1 job2 job3";
+    "bio-image"
+    "bio"
+    "education"
+    "skills";
   grid-template-columns: 1fr;
 
   .bio-image {
@@ -91,30 +99,51 @@ main {
     margin: auto;
     align-items: center;
     border-radius: 30%;
-    border: $secondary-color 3px solid;
+    border-color: $secondary-color;
   }
 
   .bio {
     grid-area: bio;
     font-size: 1.5rem;
+    padding-bottom: 20px;
   }
 
-  .job-1 {
-    grid-area: job1;
-  }
+  // .job {
+  //   background: lighten($primary-color, 5);
+  //   padding: 0.5rem;
+  //   border-bottom: $secondary-color 5px solid;
+  // }
+}
 
-  .job-2 {
-    grid-area: job2;
-  }
+.title-underline {
+  width: 100px;
+  height: 3px;
+  background-color: white;
+  margin: 10px auto 30px auto;
+}
 
-  .job-3 {
-    grid-area: job3;
-  }
+.content-underline {
+  width: 300px;
+  height: 2px;
+  background-color: $secondary-color;
+  margin: 0 auto 20px auto;
+}
 
-  .job {
-    background: lighten($primary-color, 5);
-    padding: 0.5rem;
-    border-bottom: $secondary-color 5px solid;
+.education {
+  grid-area: education;
+  padding-bottom: 20px;
+}
+
+.skills {
+  grid-area: skills;
+  padding-bottom: 20px;
+
+  .skills-icons {
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
   }
 }
 
@@ -147,6 +176,19 @@ main {
       padding: 0.5rem 3.5rem;
       border-color: $secondary-color;
     }
+  }
+}
+
+//skills icon styles
+
+.skills-icons i {
+  font-size: 65px;
+  padding: 20px;
+  margin: 0 auto 50px auto;
+
+  &:hover {
+    color: $secondary-color;
+    @include easeOut();
   }
 }
 
