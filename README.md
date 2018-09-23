@@ -76,6 +76,10 @@ Accomodating for responsive design was an important usability consideration. Muc
 
 Media queries were also incorporated for specific singular features.
 
+#### Images and Icons
+
+The portrait image was taken from myself, background-images were obtained from pexels.com, icons from font-awesome.com.
+
 #### Agile Incorporation
 
 A Trello board was used to help manage planned workflow and allow for adjustments to be made. This was particularly evident during the creation of the menu overlay feature.
