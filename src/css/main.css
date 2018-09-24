@@ -136,9 +136,14 @@ h3 {
     padding-bottom: 3rem;
     font-family: "Oxygen", sans-serif; }
 
-h3 {
-  color: #dada00;
-  font-size: 180%; }
+h1 {
+  margin: 0;
+  font-weight: 400; }
+  h1.title-heading {
+    font-size: 4rem;
+    padding-bottom: 5rem;
+    font-family: "Montserrat", sans-serif;
+    color: #dada00; }
 
 a {
   color: white;
@@ -171,7 +176,6 @@ main {
 
 .about-info {
   display: grid;
-  padding-top: 20px;
   padding-bottom: 60px;
   grid-template-areas: "bio-image" "bio" "education" "skills";
   grid-template-columns: 1fr; }
@@ -372,10 +376,8 @@ main {
   .projects {
     grid-template-columns: 1fr; } }
 
-body {
-  color: white;
-  line-height: 1.6;
-  font-family: "Oxygen", sans-serif; }
+#contact-heading {
+  padding-bottom: 20px; }
 
 .container {
   max-width: 1170px;

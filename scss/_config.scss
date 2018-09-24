@@ -1,4 +1,4 @@
-//---Config containing mixins and variables
+/////---Config containing mixins for media queries, variables and fonts
 
 // Google Fonts
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Oxygen|");
@@ -24,6 +24,8 @@ $pages-opacity: 0.9;
   transition: all 0.4s ease-in-out;
 }
 
+///Using mixin to create background image with grey shadow effect
+
 //Mixin for setting background and image opacity
 @mixin background {
   @if $display-home-image {
@@ -33,7 +35,7 @@ $pages-opacity: 0.9;
       background-size: cover; // full image
 
       &:after {
-        //pseudoelement
+        //pseudoelement to create grey opacity
         content: ""; //no content
         position: absolute;
         top: 0;
@@ -51,7 +53,7 @@ $pages-opacity: 0.9;
   }
 }
 
-//Mixin for setting other pages background and opacity
+//Mixin for setting about, projects and contact background and opacity
 @mixin pages-image {
   @if $display-pages-image {
     &#pages-image {
@@ -60,7 +62,7 @@ $pages-opacity: 0.9;
       background-size: cover; // full image
 
       &:after {
-        //pseudoelement
+        //pseudoelement pseudoelement to create grey opacity
         content: ""; //no content
         position: fixed;
         top: 0;
@@ -81,7 +83,7 @@ $pages-opacity: 0.9;
 
 @mixin mediaSmall {
   @media screen and (max-width: 480px) {
-    @content;
+    @content; //anything that gets added to mixin of mediaSmall in _responsive.scss will be put into @content--- like import
   }
 }
 
@@ -93,12 +95,6 @@ $pages-opacity: 0.9;
 
 @mixin mediaLarge {
   @media screen and (max-width: 769px) and (max-width: 1170px) {
-    @content;
-  }
-}
-
-@mixin mediaXlarge {
-  @media screen and (min-width: 1171px) {
     @content;
   }
 }

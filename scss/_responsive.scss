@@ -1,4 +1,4 @@
-//responsive design import partials
+//sass file for responsive design importing media queries using @content
 
 @include mediaSmall {
   body {

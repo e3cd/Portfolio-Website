@@ -40,9 +40,16 @@ h3 {
   }
 }
 
-h3 {
-  color: $secondary-color;
-  font-size: 180%;
+h1 {
+  margin: 0;
+  font-weight: 400;
+  //& attaches class
+  &.title-heading {
+    font-size: 4rem;
+    padding-bottom: 5rem;
+    font-family: $primary-font;
+    color: $secondary-color;
+  }
 }
 
 a {
@@ -87,10 +94,10 @@ main {
     }
   }
 }
-
+///about page styling
 .about-info {
   display: grid;
-  padding-top: 20px;
+
   padding-bottom: 60px;
   grid-template-areas:
     "bio-image"
@@ -163,7 +170,7 @@ main {
   }
 }
 
-//projects page styling
+//////////////projects page styling
 
 .projects {
   display: grid;
@@ -232,16 +239,17 @@ main {
   height: 40px;
 }
 
-@import "responsive";
+//@import responsive here to take effect
 
-////////////contact page form styling
+@import "responsive";
 
 //Cannot import _contact.scss for unknown reason, therefore in main.scss
 
-body {
-  color: white;
-  line-height: 1.6;
-  font-family: $secondary-font;
+////////////contact page form styling/////////////////////////////
+
+//My info section styling
+#contact-heading {
+  padding-bottom: 20px;
 }
 
 .container {
