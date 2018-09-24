@@ -426,7 +426,8 @@ ul {
   background: #dada00;
   border: 0;
   text-transform: uppercase;
-  justify-content: center; }
+  justify-content: center;
+  cursor: pointer; }
 
 .contact form button:hover,
 .contact form button:focus {
