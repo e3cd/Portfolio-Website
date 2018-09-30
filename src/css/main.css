@@ -141,7 +141,7 @@ h1 {
   font-weight: 400; }
   h1.title-heading {
     font-size: 4rem;
-    padding-bottom: 4rem;
+    padding-bottom: 1.25rem;
     font-family: "Montserrat", sans-serif;
     color: #dada00; }
 
@@ -176,6 +176,7 @@ main {
 
 .about-info {
   display: grid;
+  padding-top: 30px;
   padding-bottom: 60px;
   grid-template-areas: "bio-image" "bio" "education" "skills";
   grid-template-columns: 1fr; }
@@ -235,21 +236,14 @@ main {
     width: 100%;
     border: 3px #fff solid; }
 
-.boxes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 1rem; }
-  .boxes div {
-    font-size: 2rem;
-    border: 3px #fff solid;
-    padding: 0.5rem 1rem;
-    margin: 3rem 3rem;
-    transition: all 0.4s ease-in-out; }
-    .boxes div:hover {
-      padding: 0.5rem 3.5rem;
-      border-color: #dada00; }
+.boxes .btn-light {
+  font-size: 2rem;
+  border: 3px #fff solid;
+  padding: 0.5rem 1rem;
+  margin: 3rem 3rem;
+  transition: all 0.4s ease-in-out; }
+  .boxes .btn-light:hover {
+    padding: 0.5rem 3.5rem; }
 
 .btn, .btn-dark {
   display: block;
@@ -263,11 +257,11 @@ main {
   transition: all 0.4s ease-in-out; }
   .btn-dark:hover {
     background: #dada00;
-    color: set-text-color(#dada00); }
+    color: set-text-color(#dada00);
+    text-decoration: none; }
 
 .btn-light {
-  background: #c4c4c4;
-  color: #333; }
+  background: #c4c4c4; }
 
 #footer {
   text-align: center;
@@ -383,7 +377,7 @@ main {
   max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 2em; }
+  padding-bottom: 150px; }
 
 ul {
   list-style: none;
@@ -391,7 +385,8 @@ ul {
 
 .wrapper {
   border: 1px solid #dada00;
-  box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7); }
+  box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
+  height: 50%; }
 
 .my-info {
   background: grey; }
