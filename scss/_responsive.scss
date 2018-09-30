@@ -1,6 +1,43 @@
 //sass file for responsive design importing media queries using @content
 
 @include mediaSmall {
+  .menu-btn {
+    position: absolute;
+    z-index: 3;
+    right: 4.2%;
+    top: 40px;
+    cursor: pointer;
+    @include easeOut;
+
+    .btn-line {
+      width: 15px;
+      height: 2px;
+      margin: 0 0 8px 0; //only at bottom
+      background: white;
+      @include easeOut;
+    }
+
+    // Menu lines rotate into X
+    &.close {
+      transform: rotate(90deg);
+
+      .btn-line {
+        // Line 1 - Rotate
+        &:nth-child(1) {
+          transform: rotate(48.5deg) translate(7px, 8px);
+        }
+        // Line 2 - Hide
+        &:nth-child(2) {
+          opacity: 0;
+        }
+        // Line 3 - Rotate
+        &:nth-child(3) {
+          transform: rotate(-45deg) translate(6px, -7.5px);
+        }
+      }
+    }
+  }
+
   body {
     h1 {
       justify-content: center;
