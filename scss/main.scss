@@ -173,17 +173,10 @@ main {
 
 //////////////projects page styling
 
-.projects {
-  display: grid;
-  grid-gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 25px 0px 150px 0px;
-
-  img {
-    width: 100%;
-    border: 3px #fff solid;
-  }
-}
+// img {
+//   height: 700px;
+//   width: 400px;
+// }
 
 .boxes {
   .btn-light {
@@ -201,30 +194,6 @@ main {
 }
 
 //button styles in projects page
-
-.btn {
-  display: block;
-  padding: 0.5rem 1rem;
-  border: 0;
-  margin-bottom: 0.3rem;
-}
-
-.btn-dark {
-  @extend .btn;
-  background: darken($primary-color, 50);
-  color: #fff;
-  @include easeOut;
-
-  &:hover {
-    background: $secondary-color;
-    color: set-text-color($secondary-color);
-    text-decoration: none;
-  }
-}
-
-.btn-light {
-  background: lighten($primary-color, 50);
-}
 
 #footer {
   text-align: center;

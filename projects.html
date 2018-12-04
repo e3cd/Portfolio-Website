@@ -1,125 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="src/css/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/css/main.css" />
 
     <title>View My Projects</title>
-</head>
+  </head>
 
-<body id="pages-image">
+  <body id="pages-image">
     <header>
-        <div class="menu-btn">
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
-        </div>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
 
-        <nav class="menu">
-            <div class="menu-photo">
-                <div class="portrait">
-                </div>
-            </div>
-            <ul class="menu-nav">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link">
-                        Home
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="about.html" class="nav-link">
-                        About me
-                    </a>
-                <li class="nav-item current">
-                    <a href="projects.html" class="nav-link">
-                        My Projects
-                    </a>
-                <li class="nav-item">
-                    <a href="contact.html" class="nav-link">
-                        Contact
-                    </a>
-                </li>
-            </ul>
-        </nav>
+      <nav class="menu">
+        <div class="menu-photo"><div class="portrait"></div></div>
+        <ul class="menu-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link"> Home </a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link"> About me </a>
+          </li>
+
+          <li class="nav-item current">
+            <a href="projects.html" class="nav-link"> My Projects </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link"> Contact </a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main id="container">
-        <h1 class="title-heading">
-            My Projects
-        </h1>
-        <h3 class="secondary-heading">Here is some of my work, more to come on this page!</h3>
-        <div class="projects">
-            <div class="item">
-
-                <img src="src/images/terminal.gif" alt="Ruby terminal app in collaboration with William Francis">
-
-                <div class="btn-light">
-                    <i class="fas fa-eye"></i>Ruby Terminal App
-                </div>
-                <a href="https://github.com/e3cd/Millionaire_Terminal" target="_blank" class="btn-dark">
-                    <i class="fab fa-github"></i>Github
-                </a>
+      <h1 class="title-heading">My Projects</h1>
+      <h3 class="secondary-heading">
+        Here is some of my work, more to come on this page!
+      </h3>
+      <div class="row">
+        <div class="col-lg-6 portfolio-item">
+          <div class="card h-100 bg-transparent">
+            <img class="card-img-top" src="src/images/TERMINAL.png" alt="" />
+            <div class="card-body">
+              <h4 class="card-title text-dark">
+                <a
+                  href="https://github.com/e3cd/Millionaire_Terminal"
+                  target="_blank"
+                  id="nounderline"
+                  ><i class="fab fa-github"></i>Ruby Terminal App</a
+                >
+              </h4>
+              <p class="card-text">
+                A terminal questionnaire game built using Ruby
+              </p>
             </div>
-            <div class="item">
-
-                <img src="src/images/codepen1.png" alt="Product landing page">
-
-                <div class="btn-light">
-                    <i class="fas fa-eye"></i>Landing Page
-                </div>
-                <a href="https://codepen.io/e3cd/pen/wxzyev" target="_blank" class="btn-dark">
-                    <i class="fas fa-link"></i>Link
-                </a>
-            </div>
-            <div class="item">
-
-                <img src="src/images/documentation_page.png" alt="Documentation page">
-
-                <div class="btn-light">
-                    <i class="fas fa-eye"></i>Documentation Page
-                </div>
-                <a href="https://codepen.io/e3cd/pen/vaNvpq" target="_blank" class="btn-dark">
-                    <i class="fas fa-link"></i>Link
-                </a>
-            </div>
+          </div>
         </div>
-
+        <div class="col-lg-6 portfolio-item">
+          <div class="card h-100 bg-transparent">
+            <img class="card-img-top" src="src/images/cater_log.png" alt="" />
+            <div class="card-body">
+              <h4 class="card-title text-dark">
+                <a href="https://github.com/e3cd/cater_log" target="_blank"
+                  ><i class="fab fa-github"></i>CaterLog</a
+                >
+              </h4>
+              <p class="card-text">
+                A two-sided marketplace for catering services built using Ruby
+                on Rails
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 portfolio-item">
+          <div class="card h-100 bg-transparent">
+            <img class="card-img-top" src="src/images/weather.png" alt="" />
+            <div class="card-body">
+              <h4 class="card-title">
+                <a href="https://github.com/e3cd/currentWeather" target="_blank"
+                  ><i class="fab fa-github"></i>currentWeather</a
+                >
+              </h4>
+              <p class="card-text">
+                A weather application that displays the current weather
+                conditions for a city built with vanilla Javascript
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
-    <footer id="footer">
-        &copy; 2018
-    </footer>
+    <footer id="footer">&copy; 2018</footer>
 
     <!-- Import main.js containing menu overlay dropdown -->
 
     <script src="src/js/main.js"></script>
 
-    <!-- Script to get all menu btn-lines to hover to secondary color-- scss only hovers siblings after the hovered element -->
+    <!--
+      Script to get all menu btn-lines to hover to secondary color-- scss only hovers siblings after the hovered element
+    -->
 
     <script type="text/javascript">
-        var elms = document.getElementsByClassName("btn-line");
-        var n = elms.length;
-        function changeColor(color) {
-            for (var i = 0; i < n; i++) {
-                elms[i].style.backgroundColor = color;
-            }
-        }
+      var elms = document.getElementsByClassName("btn-line");
+      var n = elms.length;
+      function changeColor(color) {
         for (var i = 0; i < n; i++) {
-            elms[i].onmouseover = function () {
-                changeColor("rgb(218, 218, 0)");
-            };
-            elms[i].onmouseout = function () {
-                changeColor("white");
-            };
-        } 
+          elms[i].style.backgroundColor = color;
+        }
+      }
+      for (var i = 0; i < n; i++) {
+        elms[i].onmouseover = function() {
+          changeColor("rgb(218, 218, 0)");
+        };
+        elms[i].onmouseout = function() {
+          changeColor("white");
+        };
+      }
     </script>
-</body>
-
+  </body>
 </html>
